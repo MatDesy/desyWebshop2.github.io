@@ -1,0 +1,564 @@
+/* GENERAL */
+/* MET LE FONT PAR DEFAUT SUR LE SITE */
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #393939
+}
+/* MET LE BUTTON CLICK SUR LES LIENS OU LES HOVERS */
+a[href], input[type='submit'], input[type='image'], select, button, .pointer {
+    cursor: pointer;
+}
+
+body {
+    margin : 0;
+    background-color: #E7E7E7;
+
+}
+/* FONT DE CERTAIN TITRE */
+.webname {
+    color: #2d2d2d;
+    text-decoration: underline;
+    text-decoration-color: white ;
+    margin-left: 10px;
+}
+.title {
+    margin-top: 0;
+    text-align: center;
+    color: #aa2244;
+}
+.offerTitle {
+    margin-top: 100px;
+}
+/* NAVBAR */
+.navbar {
+    background-color: #587fe1;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+/* FLOATING */
+.mleft {
+    float: left;
+}
+.mright {
+    float: right;
+}
+/* BUTTON NAVBAR */
+.navbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+.btn {
+    margin-top: 14px;
+    margin-right: 30px;
+}
+/* MARGIN LEFT/RIGHT */
+.gres {
+    margin-left: 570px;
+}
+.dres {
+    margin-right: 570px;
+}
+/* MINUTEUR TEXT */
+.minuteur {
+    text-align: center;
+    color: #2d2d2d;
+
+}
+#demo {
+    font-size: 60px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* FOOTER */
+.footer {
+
+    bottom: 0;
+    background-color: #cfced1;
+    width: 100%;
+    height: 300px;
+}
+
+/* LOGO */
+.logo {
+    margin-left: 120px;
+}
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+/*     CAROUSEL      */
+
+.card-carousel {
+    margin-left: 370px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-carousel .my-card {
+    height: 25rem;
+    width: 40rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #ffffff;
+    transition: 1s;
+}
+#card1 {
+    background-position: center;
+    background-size: cover;
+}
+#card2 {
+    background-size: cover;
+    background-position: center;
+
+}
+#card3 {
+    background-size: cover;
+    background-position: center;
+
+}
+#card4 {
+    background-position: center;
+    background-size: cover;
+
+}
+.cardheader {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.92);
+}
+.cardheader h1 {
+    margin-top: 0;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+.card-carousel .my-card:nth-child(0):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* DROPDOWN DES BUTTONS */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    min-height: 130px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-right: 400px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: solid;
+    border-color: #67676a;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #344fff;
+    background-color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 30px;
+}
+.dropdown-content button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #344fff;
+    background-color: inherit;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+/* LE MODAL DU SITE */
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#modalContent {
+
+    z-index: 6;
+    background-color: #fbfbfb;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+}
+.modal-header {
+    padding: 2px 16px;
+    color: white;
+}
+.modal-header span {
+    float: right;
+    font-size: 20pt;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+#modalContent h1 {
+    color: rgb(58, 94, 149);
+    text-align: center;
+}
+
+/* AFFICHE L'ÉLÉMENT */
+
+.show {
+    display: block;
+}
+
+/* LOGIN BUTTON */
+
+.loginContent label {
+    margin-bottom: 20px;
+}
+.loginContent input {
+    width: 60%;
+    border-radius: 5px;
+    border: solid #4c6881;
+    margin-bottom: 60px;
+    height: 40px;
+}
+.loginContent {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* FORMULAIRE */
+
+#btnSubmit {
+    background-color: #79ff61;
+}
+#formContainer {
+    padding: 20px;
+    margin: auto auto 50px;
+    text-align: center;
+    width:550px;
+    height: 800px;
+    background-color: #d8deec;
+    border: solid black;
+    border-radius: 20px;
+}
+.frmText{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 220px;
+    height: 30px;
+}
+
+#formInscription label {
+    margin-top: 10px;
+}
+#box1 {
+    margin-top: 20px;
+}
+#grpAge {
+    margin-top: 15px;
+}
+#submit {
+    width: 200px;
+    height: 60px;
+    margin-top: 25px;
+    font-size: 22px;
+    border: solid rgba(15, 9, 6, 0.51);
+    border-radius: 10px;
+}
+select {
+    margin-top: 20px;
+    width: 150px;
+}
+.frmHeader {
+    color: #252525;
+    margin-top: 100px;
+    text-align: center;
+}
+#formInscription span {
+    color: red;
+}
+
+/* INFO DES ARTICLES DU CAROUSEL */
+
+.itemInfo {
+    width: 600px;
+    height: 200px;
+    background-color: #dbd9e7;
+    padding: 5px;
+    border: solid 1px dimgrey;
+    border-radius: 20px;
+    margin: 50px auto 150px;
+}
+.itemInfo p {
+    font-size: 15pt;
+    text-align: center;
+}
+
+.itemCard {
+    margin: 36px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border : solid #444444;
+}
+#itemContent {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    position: relative;
+    height: 800px;
+}
+
+.userLog {
+    width: 50px;
+    height: 50px;
+}
+.postContainer {
+    height: 800px;
+    width: 100%;
+}
+.post {
+    background-color: #e8e8e8;
+    width: 400px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    border : solid #444444;
+    color : #313131;
+}
+.postheader {
+    width: 100%;
+    height: 50px;
+    background-color: #d5d5d5;
+    z-index: 100;
+    top : 0;
+
+}
+.postThread {
+    margin-left: 10px;
+}
+
+.postUser {
+
+    margin-left : 10px;
+}
+.postContent {
+    margin-left : 10px;
+}
+.postContent div
+{
+    margin : 15px;
+}
+.forumhdr {
+    margin-top: 110px;
+    text-align: center;
+    color: #313131;
+}
+.commentaireBox {
+    margin-top: 170px;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 230px;
+    margin-left: 40px;
+}
+.commentaire {
+    width: 100%;
+    height: auto;
+    background-color: #dcdcdc;
+}
+
+.commentaire h2 {
+    margin-left: 20px;
+    font-size: 15pt;
+}
+.commentaire p {
+    margin-left: 20px;
+}
+.itemContainer {
+    width: 100%;
+    height: 800px;
+}
+.itemImage {
+    width: 450px;
+    height: 550px;
+    border : solid #444444;
+}
+.selectedItem {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+.itemInfoBox {
+    width : 500px;
+    margin-top: 200px;
+    margin-right: 500px;
+}
+.itemInfoBox p {
+    font-size: 14pt;
+}
+.sendActionBox {
+    margin-bottom: 100px;
+}
+.sendActionBox form button {
+    height: 30px;
+    width: 80px;
+    margin-left: 120px;
+}
+.sendActionBox form input {
+    width: 1000px;
+    height: 30px;
+    font-size: 12pt;
+}
+#btndelete
+{
+    width : 150px;
+    left : 50%;
+}
+.deleteContainer
+{
+    margin-top : 50px;
+    text-align : center;
+}
+.comptesizing {
+    width: 150px;
+    right: -20%;
+}
+.indPLogo {
+    width : 30px;
+    height : 30px;
+    float: left;
+    position: center;
+    top: 50%;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.chart {
+    float: left;
+}
+.chart2 {
+    float: left;
+    width : 700px;
+    margin-left: 80px; margin-top: 200px; border: solid #3a3a3a; padding: 5px;
+
+}
+.chartcontainer {
+    height: 1500px;
+}

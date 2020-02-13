@@ -1,0 +1,6 @@
+Souris, 25.5
+Carte Graphique, 15.8
+Fils, 29.5
+Saucisse, 1.5
+Clavier, 22.7
+Autre, 5
